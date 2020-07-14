@@ -1,3 +1,12 @@
+About this Project
+This project uses the very popular and in-demand React library to create an image gallery app. With the help of this powerful "MVC" (Model, View, Controller) library, the app is built in the style of a modern SPA to keep it fast, modular, and in sync with current web development trends.
+
+Additional dependencies added in package.json
+- Axios
+
+CSS Styling Changes
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
