@@ -25,11 +25,21 @@ constructor() {
   }
 }
 
+/*componentDidMount()
+replaces the "/" in the current location's pathname (received from using withRouter) and calls the updatePictures method
+allows the user to put their preferred search directly in the URL as a pathname
+*/
+
 componentDidMount() {
   let regex = /^\//
   let newSearchTerm = this.props.location.pathname.replace(regex,"")
   this.updatePictures(newSearchTerm);
 }
+
+/*componentDidUpdate()
+checks the current location pathname against the previous
+if it doesn't match, recall the updatePictures again, based on the new pathname
+*/
 
 componentDidUpdate(prevProps, prevState) {
  let regex = /^\//
@@ -41,6 +51,7 @@ componentDidUpdate(prevProps, prevState) {
 
 /*updatePicture()
 - receive a string as an argument
+sets loading to true
 uses Axios to retrieve data form the flickr API
 then sets the application state to include the array of pictures returned, and the searchTag to the word passed in as an argument
 catches errors and prints them to the log
