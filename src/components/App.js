@@ -26,7 +26,9 @@ constructor() {
 }
 
 componentDidMount() {
-  this.updatePictures(this.state.searchTag)
+  let regex = /^\//
+  let newSearchTerm = this.props.location.pathname.replace(regex,"")
+  this.updatePictures(newSearchTerm);
 }
 
 componentDidUpdate(prevProps, prevState) {
