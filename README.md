@@ -4,7 +4,13 @@ This project uses the very popular and in-demand React library to create an imag
 Additional dependencies added in package.json
 - Axios
 
-CSS Styling Changes
+CSS Styling Changes and Customizations from the base project
+- Additional "home" button added for 404 and NoResult displays which navigate to "/"
+- Default nav options changed to "Sunrise", "Butterfly", and "Graffiti"
+
+Notes on React and React-Router usage
+- used withRouter to create higher order components of App and SearchForm, to allow for props.history.push() to be used from SearchForm
+- used useState ReactHooks in the SearchForm to provide it access to the state 
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

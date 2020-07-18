@@ -1,8 +1,8 @@
 import React from 'react'
-import NotFound from './NotFound'
+import NoResults from './NoResults'
 import GalleryItem from './GalleryItem'
 
-const Gallery = ({pictureBook}) => {
+const Gallery = ({pictureBook, loading, updateTag}) => {
 
   let galleryItems
 
@@ -14,15 +14,12 @@ const Gallery = ({pictureBook}) => {
       />
     )
   } else {
-    galleryItems = <NotFound />
+    galleryItems = <NoResults />
   };
 
   return (
     <div className="photo-container">
-      <h2>Results</h2>
-      <ul>
-        {galleryItems}
-      </ul>
+      {loading? <h2>Fetching pictures...</h2>: <React.Fragment><ul>{galleryItems}</ul></React.Fragment>}
     </div>
   )
 

@@ -1,15 +1,15 @@
 import React from 'react';
 import {NavLink} from 'react-router-dom'
 
-const NotFound = (props) => {
+const NoResults = (props) => {
 
   return (
     <li className="not-found">
-      <h3>404 - Page not found</h3>
-      <p>That URL is not valid on this page.</p>
+      <h3>No Results Found</h3>
+      <p>Your search did not return any results. Please try again.</p>
       <NavLink to="/">Home</NavLink>
     </li>
   )
 }
 
-export default NotFound
+export default NoResults

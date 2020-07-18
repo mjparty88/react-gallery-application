@@ -17,9 +17,9 @@ class Nav extends Component {
     return (
       <nav className="main-nav">
         <ul>
-          <li><NavLink to="/cats" onClick={this.handleSelect}>Cats</NavLink></li>
-          <li><NavLink to="/dogs" onClick={this.handleSelect}>Dogs</NavLink></li>
-          <li><NavLink to="/computers" onClick={this.handleSelect}>Computers</NavLink></li>
+          <li><NavLink to="/sunrise" onClick={this.handleSelect}>Sunrise</NavLink></li>
+          <li><NavLink to="/butterfly" onClick={this.handleSelect}>Butterfly</NavLink></li>
+          <li><NavLink to="/graffiti" onClick={this.handleSelect}>Graffiti</NavLink></li>
         </ul>
       </nav>
     )

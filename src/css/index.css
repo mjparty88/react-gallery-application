@@ -93,6 +93,15 @@ input {
   width: 100%;
 }
 
+.not-found a {
+  //display: block;
+  background: #438bbd;
+  border-radius: 3px;
+  padding: 5px;
+  color: #fff;
+}
+
+
 @media only screen and (max-width: 767px)  {
   body {
     padding-top: 2em;
@@ -117,7 +126,7 @@ input {
     display: flex;
     justify-content: center;
   }
-  
+
   .main-nav li {
     margin: 10px;
     width: 100px;
